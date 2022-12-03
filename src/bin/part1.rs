@@ -2,8 +2,6 @@ use std::env;
 use std::fs;
 use std::process;
 
-use std::collections::HashSet;
-
 fn read_input(filename: &str) -> Vec<String> {
     let mut ret: Vec<String> = Vec::new();
     let content = fs::read_to_string(filename).expect("Unable to read from file.");
